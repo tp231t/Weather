@@ -55,8 +55,8 @@ public class FetchWeather extends AsyncTask<String , Void , JSONObject[]> {
             Log.d(LOG_TAG , "URI Ready");
             HttpURLConnection connection0 = (HttpURLConnection)day.openConnection();
             HttpURLConnection connection1 = (HttpURLConnection)fort.openConnection();
-            connection0.addRequestProperty("x-api-key", context.getString(R.string.open_weather_maps_app_id));
-            connection1.addRequestProperty("x-api-key", context.getString(R.string.open_weather_maps_app_id));
+            connection0.addRequestProperty("x-api-key", "a56060851e25e429476157ff65d0e5e1");
+            connection1.addRequestProperty("x-api-key", "a56060851e25e429476157ff65d0e5e1");
             BufferedReader reader;
             StringBuilder json = new StringBuilder(1024) , json1 = new StringBuilder(1024);
 
